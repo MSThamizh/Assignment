@@ -30,6 +30,11 @@ public class DetailsTester {
 		
 		dao.printAll();
 		
+		dao.deletebyCustomerId(25);
+		dao.printAll();
+		
+		
+		
 	}
 
 }
