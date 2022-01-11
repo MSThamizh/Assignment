@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thoughtfocus</title>
+    <link rel="stylesheet" href="view.css">
+    <script src="view.js"></script>
+</head>
+<body>
+    <header>
+        <div  class="logo-img"><img class="logo" src="Images/Thoughtfocus logo.png" alt="logo"/> </div>
+        <div class="company-name"><h1>THOUGHTFOCUS</h1</a></div>
+        <div class="social-links"> 
+           <div><a href="https://www.facebook.com/ThoughtFocusTec/"><img class="facebook" src="Images/facebook.jfif" alt="facebook">></a></div> 
+           <div><a href="https://twitter.com/thoughtfocustec?lang=en"><img class="twitter" src="Images/twitter.png" alt="twitter">></a></div> 
+           <div><a href="https://in.linkedin.com/company/thoughtfocus"><img class="linkedin" src="Images/linkedin.png" alt="linkedin">></a></div>
+        </div>
+      </header>
+      <section class="subsection">
+        <div class="box-main">
+
+            <section class="firstsection">
+                <div class="box-main">
+                        <h1 class="text-big" id="web">
+                            <h2>Remove Employee</h2><br>
+
+                            <div id="wrapper">
+                                <table align='center' cellspacing=2 cellpadding=5 id="data_table" border=1 >
+                                <tr>
+                                <th>EmpId</th>
+                                <th>Name</th>
+                                <th>Skill</th>
+                                <th>Department</th>
+                                <th>Salary</th>
+                                </tr>
+                                
+                                <tr id="row1">
+                                <td id="empid_row1">TF1</td>
+                                <td id="name_row1">Ram</td>
+                                <td id="skill_row1">Java</td>
+                                <td id="department_row1">IT</td>
+                                <td id="salary_row1">100000</td>
+                                <td>
+                            
+                                <input type="button" value="Delete" class="delete" onclick="delete_row('1')">
+                                </td>
+                                </tr>
+                                
+                                <tr id="row1">
+                                  <td id="empid_row1">TF2</td>
+                                  <td id="name_row1">Shyam</td>
+                                  <td id="skill_row1">Accounts</td>
+                                  <td id="department_row1">Finance</td>
+                                  <td id="salary_row1">200000</td>
+                                  <td>
+                                  
+                                  <input type="button" value="Delete" class="delete" onclick="delete_row('1')">
+                                  </td>
+                                  </tr>
+                                
+                                  <tr id="row1">
+                                    <td id="empid_row1">TF3</td>
+                                    <td id="name_row1">Sam</td> 
+                                    <td id="skill_row1">HRM</td>
+                                    <td id="department_row1">HR</td>
+                                    <td id="salary_row1">300000</td>
+                                    <td>
+                                    
+                                    <input type="button" value="Delete" class="delete" onclick="delete_row('1')">
+                                    </td>
+                                    </tr>
+                                </table>
+                                </div>
+
+
+
+                            
+                            
+                        </section>
+
+                        <footer class="background"><p class="text-footer">Copyright ©-2022</p></footer>
+                    </body>
+                    </html>
