@@ -38,8 +38,8 @@ public class StationaryShopDAO {
 			preparedStatement.setString(2, type);
 			preparedStatement.setDouble(3, brandName);
 			preparedStatement.setString(4, price);
-			preparedStatement.setBoolean(5, quantity);
-			preparedStatement.setBoolean(6, serialNo);
+			preparedStatement.setInt(5, quantity);
+			preparedStatement.setInt(6, serialNo);
 			preparedStatement.execute();
 
 		} catch (SQLException e) {
