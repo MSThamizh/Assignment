@@ -48,8 +48,8 @@ public class StationaryShopDAO {
 	}
 
 	public void updatePriceByBrand(Connection connection, double price, String brandName) {
-		String updateUsersCountByAppName = dto.getPriceByBrand();
-		try (PreparedStatement preparedStatement = connection.prepareStatement(updateUsersCountByAppName);) {
+		String updatePriceByBrand = dto.getPriceByBrand();
+		try (PreparedStatement preparedStatement = connection.prepareStatement(updatePriceByBrand);) {
 
 			preparedStatement.setDouble(1, price);
 			preparedStatement.setString(2, brandName);
@@ -62,7 +62,7 @@ public class StationaryShopDAO {
 	
 
 	public void deleteBySerialNo(Connection connection, int serialNo) {
-		String deleteByInternetAccessAndUserCount = dto.getdeleteBySerialNo();
+		String deleteBySerialNo = dto.getdeleteBySerialNo();
 		try (PreparedStatement preparedStatement = connection.prepareStatement(deleteBySerialNo);) {
 
 			preparedStatement.setInt(1, serialNo);

@@ -18,11 +18,11 @@ public class StationaryShopMain {
 			 " CREATE StationaryShop"
 						+ "(name varchar(25),type varchar(25),brandName varchar(25),price NUMBER(5,2),quantity int, serialNo int)";
 
-			  dto.setInsertDataQuery("INSERT INTO StationaryShop VALUES (?,?,?,?,?,?)");
-			  dto.setUpdatePriceByBrand("UPDATE StationaryShop SET price=? WHERE brand=?");
-			  dto.setDeleteBySerialNo("DELETE FROM StationaryShop WHERE serailNo=?");
-              dto.getall("SELECT * FROM StationaryShop");
-              dto.getallByName("SELECT * FROM StationaryShop WHERE name=?");
+			  dto.setinsertDataQuery("INSERT INTO StationaryShop VALUES (?,?,?,?,?,?)");
+			  dto.setupdatePriceByBrand("UPDATE StationaryShop SET price=? WHERE brand=?");
+			  dto.setdeleteBySerialNo("DELETE FROM StationaryShop WHERE serailNo=?");
+              dto.setgetall("SELECT * FROM StationaryShop");
+              dto.setgetallByName("SELECT * FROM StationaryShop WHERE name=?");
 			  
 
 			  Connection connection = getConnection();
